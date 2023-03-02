@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    
+    <title>Artist Search API</title>
+    
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Melita Poropat">
+    <meta name="description" content="Artist Search API - js web app za pretragu itunes izvođača za potrebe parcijalnog JS ispita">
+
+    <!-- style for home page-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+    <main id="landing">
+        
+        <div class="search-container">
+          <div class="search-container-header">
+          </div>
+          <form id="formSearch">
+            <div class="artist-name-input">
+              <label for="name" class="form-label"
+                ><span class="label-content">Ime izođača: </span></label
+              >
+              <input
+                type="text"
+                name="form"
+                id="form"
+                autocomplete="off"
+                placeholder="Unesi ime izvođača"
+                class="text-box"
+                required
+              />
+              <button id="search-button" type="submit">Pretraži</button>
+            </div>
+          </form>
+        </div>
+        <div class="results"></div>
+      </main>
+
+    </body>
+  </html>
